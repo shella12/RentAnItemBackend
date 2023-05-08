@@ -74,7 +74,7 @@ In order to run this project you need:
 
 Clone this repository by using the command line :
 
-- `git clone git@github.com:shella12/RentAnItemAPI.git`
+- `git clone git@github.com:shella12/RentAnItemBackend.git`
 
 ### Install
 
@@ -145,7 +145,7 @@ RAILS_DATABASE_PASSWORD=
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/shella12/RentAnItemAPI/issues).
+Feel free to check the [issues page](https://github.com/shella12/RentAnItemBackend/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
