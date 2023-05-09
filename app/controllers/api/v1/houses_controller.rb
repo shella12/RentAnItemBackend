@@ -1,4 +1,4 @@
-class Api::V1::HouseController < ApplicationController
+class Api::V1::HousesController < ApplicationController
     def index
         render json: House.all
       end
