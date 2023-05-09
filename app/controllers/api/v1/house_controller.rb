@@ -1,34 +1,34 @@
 class Api::V1::HouseController < ApplicationController
     def index
-        render json: Appointment.all
+        render json: House.all
       end
     
       def show
-        @appointment = Appointment.find(params[:id])
-        render json: @appointment
+        @house = House.find(params[:id])
+        render json: @house
       end
     
       def create
-        @appointment = Appointment.new(appointment_params)
-        if @appointment.save
-          render json: @appointment, status: :created
+        @house = House.new(house_params)
+        if @house.save
+          render json: @house, status: :created
     
         else
-          render json: { errors: @appointment.errors.full_messages }, status: :unprocessable_entity
+          render json: { errors: @house.errors.full_messages }, status: :unprocessable_entity
         end
       end
     
       def destroy
-        @appointment = Appointment.find(params[:id])
-        if @appointment.destroy
-          render json: { deleted_Appointment: @appointment, message: 'Appointment cancelled' }, status: :ok
+        @house = House.find(params[:id])
+        if @house.destroy
+          render json: { deleted_house: @house, message: 'house could not be deleted' }, status: :ok
         else
-          render json: { error: 'Appointment cancellation failed' }, status: :unprocessable_entity
+          render json: { error: 'house cancellation failed' }, status: :unprocessable_entity
         end
       end
     
-      def appointment_params
-        params.permit(:user_id, :doctor_id, :appointement_date)
+      def house_params
+        params.permit(:name, :price, :picture, :description, :owner_name)
       end
     end
     
