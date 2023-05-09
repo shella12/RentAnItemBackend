@@ -8,6 +8,11 @@ class Api::V1::HousesController < ApplicationController
     render json: @house
   end
 
+  def new
+    @house = House.new
+    render json: @house
+  end
+
   def create
     @house = House.new(house_params)
     if @house.save
