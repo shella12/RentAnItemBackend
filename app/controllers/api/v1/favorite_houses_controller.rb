@@ -6,6 +6,7 @@ class Api::V1::FavoriteHousesController < ApplicationController
   end
 
   def create
+    # ensure add index to ensure uniquness of the pairs (user_id, house_id)
     favoritehouse = FavoriteHouse.new(favorite_params)
 
     if favoritehouse.save
@@ -16,7 +17,7 @@ class Api::V1::FavoriteHousesController < ApplicationController
   end
 
   def destroy
-    favorite = FavoriteHouse.find(user_id: params[:user_id], house_id: params[:house_id])
+    favorite = FavoriteHouse.find_by(user_id: params[:user_id], house_id: params[:house_id])
     if favorite.destroy
       render json: { deleted_favorite: @favorite, message: 'favorite deleted' }, status: :ok
     else
