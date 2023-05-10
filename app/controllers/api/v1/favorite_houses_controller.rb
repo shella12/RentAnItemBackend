@@ -14,6 +14,15 @@ class Api::V1::FavoriteHousesController < ApplicationController
     end
   end
 
+  def destroy
+    favorite = FavoriteHouse.find(user_id: params[:user_id], house_id: params[:house_id])
+    if favorite.destroy
+      render json: { deleted_favorite: @favorite, message: 'favorite deleted' }, status: :ok
+    else
+      render json: { error: 'favorite deletion failed' }, status: :unprocessable_entity
+    end
+  end
+
   private
 
   def favorite_params
