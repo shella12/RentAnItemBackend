@@ -33,7 +33,7 @@ User.create(email:"zuhra@gmail.com",password:"123456")
       {
         name: "Cottage",
         price: 990000,
-        picture:"https://github.com/shella12/RentAnItemBackend/assets/44798044/ff6876b6-92ed-4f1a-804a-0f7ac491dcc6", 
+        picture:"https://github.com/shella12/RentAnItemBackend/assets/44798044/c88d6061-e4c9-40ed-8977-64941a8ce82b", 
         description: "This house has 5 rooms upstairs and 4 rooms downstairs. Home design emphasizes clean lines and geometric shapes.
          The magic thing about this houe is that it feels good to leave, and it feels even better to come back.
          Modern Conveniences and Green Features. Well-Placed Bathrooms. Quality Construction with Distinct Architecture. 
@@ -43,7 +43,7 @@ User.create(email:"zuhra@gmail.com",password:"123456")
       {
         name: "Contemporary architecture",
         price: 796000,
-        picture:"https://github.com/shella12/RentAnItemBackend/assets/44798044/e222ceb8-9f5a-4f3d-b19a-1e458ac85047", 
+        picture:"https://github.com/shella12/RentAnItemApp/assets/44798044/8f6b203f-5627-4605-b660-336e01bddf89", 
         description: "This house has 5 rooms upstairs and 4 rooms downstairs. Home design emphasizes clean lines and geometric shapes.
          The magic thing about this houe is that it feels good to leave, and it feels even better to come back.
          Modern Conveniences and Green Features. Well-Placed Bathrooms. Quality Construction with Distinct Architecture. 
@@ -53,7 +53,7 @@ User.create(email:"zuhra@gmail.com",password:"123456")
       {
         name: "Cottage",
         price: 456000,
-        picture:"https://github.com/shella12/RentAnItemBackend/assets/44798044/876a9a91-e006-463d-8820-a29bb48b2c20", 
+        picture:"https://github.com/shella12/RentAnItemBackend/assets/44798044/46fda450-8a02-4ee6-9017-f54284fb54ae", 
         description: "This house has 5 rooms upstairs and 4 rooms downstairs. Home design emphasizes clean lines and geometric shapes.
          The magic thing about this houe is that it feels good to leave, and it feels even better to come back.
          Modern Conveniences and Green Features. Well-Placed Bathrooms. Quality Construction with Distinct Architecture. 
@@ -63,7 +63,7 @@ User.create(email:"zuhra@gmail.com",password:"123456")
       {
         name: "Mansion",
         price: 870000,
-        picture:"https://github.com/shella12/RentAnItemBackend/assets/44798044/decdfb78-4b10-496f-b929-1fc0b2ddc469", 
+        picture:"https://github.com/shella12/RentAnItemBackend/assets/44798044/ac143109-1ae3-4885-a650-808b3bdb6cda", 
         description: "This house has 5 rooms upstairs and 4 rooms downstairs. Home design emphasizes clean lines and geometric shapes.
          The magic thing about this houe is that it feels good to leave, and it feels even better to come back.
          Modern Conveniences and Green Features. Well-Placed Bathrooms. Quality Construction with Distinct Architecture. 
