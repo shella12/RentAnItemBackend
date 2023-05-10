@@ -6,7 +6,6 @@ class Api::V1::FavoriteHousesController < ApplicationController
   end
 
   def create
-    # ensure add index to ensure uniquness of the pairs (user_id, house_id)
     favoritehouse = FavoriteHouse.new(favorite_params)
 
     if favoritehouse.save
