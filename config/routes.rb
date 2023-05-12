@@ -7,7 +7,11 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1, defaults: { format: :json } do
-      resources :houses 
+      resources :houses
+      resources :users, only: [:show] do
+        resources :favorite_houses, only: [:index, :create, :destroy]
+      end
+      #get '/users/:user_id/favorites', to: 'favorite_houses#index'
     end
   end
   
