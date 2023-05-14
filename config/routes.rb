@@ -11,7 +11,6 @@ Rails.application.routes.draw do
       resources :users, only: [:show] do
         resources :favorite_houses, only: [:index, :create, :destroy]
       end
-      #get '/users/:user_id/favorites', to: 'favorite_houses#index'
     end
   end
   

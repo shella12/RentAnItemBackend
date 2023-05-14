@@ -24,6 +24,7 @@ class Api::V1::HousesController < ApplicationController
   end
 
   def destroy
+    FavoriteHouse.where(house_id: params[:id]).destroy_all
     @house = House.find(params[:id])
     if @house.destroy
       render json: { deleted_house: @house, message: 'house could not be deleted' }, status: :ok
