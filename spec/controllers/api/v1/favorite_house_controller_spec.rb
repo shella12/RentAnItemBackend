@@ -5,8 +5,8 @@ RSpec.describe Api::V1::FavoriteHousesController, type: :request do
     before(:all) do
       @user = User.first
       @user ||= User.create(email: 'test@gmail.com', password: '123456')
-      house = House.first
-      house ||= House.create(name: 'house1', price: 100, picture: 'picture1', description: 'description1', owner_name: 'owner1')
+      @house = House.first
+      @house ||= House.create(name: 'house1', price: 100, picture: 'picture1', description: 'description1', owner_name: 'owner1')
       favorite = FavoriteHouse.first
       favorite ||= FavoriteHouse.create(user_id: @user.id, house_id: @house.id)
     end
@@ -21,6 +21,11 @@ RSpec.describe Api::V1::FavoriteHousesController, type: :request do
       house ||= House.create(name: 'house2', price: 100, picture: 'picture1', description: 'description1', owner_name: 'owner1')
       post "/api/v1/users/#{@user.id}/favorite_houses/", params: { user_id: @user.id, house_id: house.id }
       expect(response).to have_http_status(:created)
+    end
+
+    it 'should delete a favorite' do
+      delete "/api/v1/users/#{@user.id}/favorite_houses/#{@house.id}/", params: { user_id: @user.id, house_id: @house.id }
+      expect(response).to have_http_status(:success)
     end
 
   end
