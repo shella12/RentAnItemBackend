@@ -8,8 +8,8 @@ RSpec.describe Api::V1::FavoriteHousesController, type: :request do
       @house = House.first
       @house ||= House.create(name: 'house1', price: 100, picture: 'picture1', description: 'description1',
                               owner_name: 'owner1')
-      favorite = FavoriteHouse.first
-      favorite ||= FavoriteHouse.create(user_id: @user.id, house_id: @house.id)
+
+      FavoriteHouse.create(user_id: @user.id, house_id: @house.id) if FavoriteHouse.first
     end
 
     it 'should return all favorites' do
