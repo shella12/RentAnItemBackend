@@ -66,19 +66,12 @@ group :development do
   # gem "spring"
 end
 gem 'rswag-api'
-gem 'rswag-ui'
-
-group :development, :test do
-  gem 'rswag-specs'
-end
-
 
 group :development, :test do
   gem 'rspec-rails'
   gem 'rswag'
   gem 'rswag-ui'
 end
-
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
