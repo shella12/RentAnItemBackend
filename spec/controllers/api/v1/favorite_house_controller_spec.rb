@@ -10,7 +10,7 @@ RSpec.describe Api::V1::FavoriteHousesController, type: :request do
                               owner_name: 'owner1')
 
       if FavoriteHouse.find_by(user_id: @user.id, house_id: @house.id).nil?
-        FavoriteHouse.create(user_id: @user.id, house_id: @house.id) 
+        FavoriteHouse.create(user_id: @user.id, house_id: @house.id)
       end
     end
 
