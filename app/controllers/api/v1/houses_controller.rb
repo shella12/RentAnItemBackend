@@ -1,6 +1,7 @@
 class Api::V1::HousesController < ApplicationController
   def index
-    render json: House.all
+    @houses = House.all
+    render json: HouseSerializer.new(@houses).serializable_hash[:data].map { |house| house[:attributes] }
   end
 
   def show
@@ -16,8 +17,7 @@ class Api::V1::HousesController < ApplicationController
   def create
     @house = House.new(house_params)
     if @house.save
-      render json: @house, status: :created
-
+      render json: HouseSerializer.new(@house).serializable_hash[:data][:attributes], status: :created
     else
       render json: { errors: @house.errors.full_messages }, status: :unprocessable_entity
     end
@@ -34,6 +34,6 @@ class Api::V1::HousesController < ApplicationController
   end
 
   def house_params
-    params.permit(:name, :price, :picture, :description, :owner_name)
+    params.require(:house).permit(:name, :price, :picture, :description, :owner_name)
   end
 end
