@@ -48,11 +48,12 @@ gem 'bootsnap', require: false
 # gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-# gem "image_processing", "~> 1.2"
+gem 'image_processing', '~> 1.2'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -65,13 +66,8 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
-gem 'rswag-api'
+gem 'rswag'
 
-group :development, :test do
-  gem 'rspec-rails'
-  gem 'rswag'
-  gem 'rswag-ui'
-end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
@@ -79,3 +75,5 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
+
+gem 'jsonapi-serializer', '~> 2.2'
