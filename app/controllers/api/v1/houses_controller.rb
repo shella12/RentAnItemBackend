@@ -16,6 +16,16 @@ class Api::V1::HousesController < ApplicationController
 
   def create
     @house = House.new(house_params)
+    puts 
+    puts 
+    puts 
+    puts 
+    puts "house"
+    puts @house
+    puts "house_params"
+    puts house_params
+    puts 
+    puts 
     if @house.save
       render json: HouseSerializer.new(@house).serializable_hash[:data][:attributes], status: :created
     else
