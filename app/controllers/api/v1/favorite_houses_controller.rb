@@ -1,8 +1,8 @@
 class Api::V1::FavoriteHousesController < ApplicationController
   def index
     favorites = FavoriteHouse.includes(:house).where(user_id: params[:user_id])
-    house = favorites.map(&:house)
-    render json: house.to_json
+    houses = favorites.map(&:house)
+    render json: HouseSerializer.new(houses).serializable_hash[:data].map { |house| house[:attributes] }
   end
 
   def create
