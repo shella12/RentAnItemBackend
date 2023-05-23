@@ -29,8 +29,12 @@ RSpec.describe Api::V1::HousesController, type: :request do
     end
 
     it 'should create a house' do
-      post '/api/v1/houses/', params: { name: 'House 1', price: 100_000, description: 'A beautiful house',
-                                         owner_name: 'John Doe', picture: 'image.jpg' }
+      post '/api/v1/houses/', params: { house: {
+            name: 'House 1', price: 10000, description: 'A beautiful house',
+            owner_name: 'John Doe', 
+            picture: Rack::Test::UploadedFile.new(Rails.root.join('app', 'assets', 'images', 'images.jpeg'), 'image/jpeg')
+          }
+        }
       expect(response).to have_http_status(:created)
     end
 
