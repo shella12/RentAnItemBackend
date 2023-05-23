@@ -30,11 +30,10 @@ RSpec.describe Api::V1::HousesController, type: :request do
 
     it 'should create a house' do
       post '/api/v1/houses/', params: { house: {
-            name: 'House 1', price: 10000, description: 'A beautiful house',
-            owner_name: 'John Doe', 
-            picture: Rack::Test::UploadedFile.new(Rails.root.join('app', 'assets', 'images', 'images.jpeg'), 'image/jpeg')
-          }
-        }
+        name: 'House 1', price: 10_000, description: 'A beautiful house',
+        owner_name: 'John Doe',
+        picture: Rack::Test::UploadedFile.new(Rails.root.join('app', 'assets', 'images', 'images.jpeg'), 'image/jpeg')
+      } }
       expect(response).to have_http_status(:created)
     end
 
@@ -44,9 +43,8 @@ RSpec.describe Api::V1::HousesController, type: :request do
     end
 
     it 'should return a empty a house' do
-      get "/api/v1/houses/new/"
+      get '/api/v1/houses/new/'
       expect(response).to have_http_status(:success)
     end
-
   end
 end
