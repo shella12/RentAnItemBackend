@@ -4,16 +4,19 @@
 
 # 📗 Table of Contents
 
+- [📗 Table of Contents](#-table-of-contents)
 - [📖 Rent a house API ](#-rent-a-house-api-)
-    - [Front End app ](#front-end-app-)
+  - [Front End application ](#front-end-application-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
+    - [Run tests](#run-tests)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -27,7 +30,7 @@
 
 The **Rent a house API** is an API for a house renting app for storing the data of customers and houses and providing user authentication.
 
-### Front End application <a name="live-demo"></a>
+## Front End application <a name="front-end"></a>
 
 You can see the [Front-end-app's](https://github.com/shella12/RentAnItemApp) repo here.
 
@@ -55,9 +58,9 @@ You can see the [Front-end-app's](https://github.com/shella12/RentAnItemApp) rep
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Live version <a name="live-demo"></a>
+## 🚀 Live Demo <a name="live-demo"></a>
 
-You can see the live [Rent a house API](https://github.com/shella12/RentAnItemApp) here.
+You can see the live **[Rent a house API here](https://renthousebackend.onrender.com)**.
 
 <!-- GETTING STARTED -->
 
@@ -102,6 +105,14 @@ RAILS_DATABASE_PASSWORD= YOUR_DATABASE_PASSWORD
 
 ```
 
+### Run tests
+
+To run tests, run the following command:
+
+```sh
+  rspec spec
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -114,7 +125,6 @@ RAILS_DATABASE_PASSWORD= YOUR_DATABASE_PASSWORD
 - GitHub: [@ZuhRa-HashiMi](https://github.com/ZuhRa-HashiMi)
 - LinkedIn: [Zuhra Hashmi](https://www.linkedin.com/in/zuhra-hashimi/)
 - AngelList: [zuhra-hashimi](https://wellfound.com/u/zuhra-hashimi)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 👤 **Ayesha Arshad**
 
