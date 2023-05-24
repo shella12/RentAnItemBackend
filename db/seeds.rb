@@ -35,17 +35,14 @@ filename: 'images3.webp', content_type: 'image/webp')
 house.save
 
 # House 3
-house = House.create(
+house = House.new(
   name: 'Cottage', price: 456000, 
   description: "This house has 5 rooms upstairs and 4 rooms downstairs. Home design emphasizes clean lines and geometric shapes.
           The magic thing about this houe is that it feels good to leave, and it feels even better to come back.
           Modern Conveniences and Green Features. Well-Placed Bathrooms. Quality Construction with Distinct Architecture. 
           Plenty of Storage Space. It's important to have designated storage areas and large closets.",
   owner_name: 'John Doe'
-).tap { |h| 
-  h.picture.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'images4.webp')), 
-  filename: 'images4.webp', content_type: 'image/webp') 
-}
+)
 house.picture.attach(io: File.open(Rails.root.join('app', 'assets', 'images', 'images4.webp')), 
 filename: 'images4.webp', content_type: 'image/webp') 
 house.save
