@@ -34,6 +34,17 @@ The **Rent a house API** is an API for a house renting app for storing the data 
 
 You can see the [Front-end-app's](https://github.com/shella12/RentAnItemApp) repo here.
 
+### Kanban
+we are 3 team members:
+- Click [here](https://github.com/users/shella12/projects/12) to see the Front End Kanban project
+- Click [here](https://github.com/users/shella12/projects/11) to see the Back End Kanban project
+
+### ScreenShots of Kanban boards
+<img src="https://user-images.githubusercontent.com/44798044/236760630-feca6d27-23fd-4af2-8ddd-9812e62e183c.png" alt="image kaban board"
+style="width:45%">
+<img src="https://user-images.githubusercontent.com/44798044/236760117-f47fb991-c12e-4f3d-9cc1-120fa9986b02.png" alt="image kaban board"
+style="width:45%">
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -57,6 +68,7 @@ You can see the [Front-end-app's](https://github.com/shella12/RentAnItemApp) rep
 - **Add to Favourite**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
@@ -102,7 +114,6 @@ your env file should contain the following
 DATABASE_NAME= RentAnItemAPI
 RAILS_DATABASE_USER= YOUR_DATABASE_NAME
 RAILS_DATABASE_PASSWORD= YOUR_DATABASE_PASSWORD
-
 ```
 
 ### Run tests
@@ -112,13 +123,10 @@ To run tests, run the following command:
 ```sh
   rspec spec
 ```
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
 
 👤 **Zuhra Hashimi**
 
@@ -137,7 +145,6 @@ To run tests, run the following command:
 - GitHub: [@Trast00](https://github.com/Trast00)
 - Twitter: [@dickoallassane](https://twitter.com/AllassaneDicko0/)
 - LinkedIn: [@dickoallassane](https://www.linkedin.com/in/allassane-dicko-744aaa224)
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
