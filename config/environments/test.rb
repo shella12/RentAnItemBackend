@@ -57,4 +57,7 @@ Rails.application.configure do
 
   # Annotate rendered view with file names.
   # config.action_view.annotate_rendered_view_with_filenames = true
+
+  # Default url option: fix test error realated to picture attachement
+  Rails.application.routes.default_url_options[:host] = 'localhost:3000' # Replace with your appropriate host information
 end

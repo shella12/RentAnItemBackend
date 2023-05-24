@@ -4,12 +4,11 @@
 
 # 📗 Table of Contents
 
-- [📗 Table of Contents](#-table-of-contents)
 - [📖 Rent a house API ](#-rent-a-house-api-)
+    - [Front End app ](#front-end-app-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-    - [Front End app ](#front-end-app-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -28,6 +27,10 @@
 
 The **Rent a house API** is an API for a house renting app for storing the data of customers and houses and providing user authentication.
 
+### Front End application <a name="live-demo"></a>
+
+You can see the [Front-end-app's](https://github.com/shella12/RentAnItemApp) repo here.
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -45,15 +48,16 @@ The **Rent a house API** is an API for a house renting app for storing the data 
 ### Key Features <a name="key-features"></a>
 
 - **Authentication**
-- **Rent houses**
+- **View list of houses**
 - **Add houses**
 - **Delete houses**
+- **Add to Favourite**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Front End app <a name="live-demo"></a>
+### Live version <a name="live-demo"></a>
 
-You can see the [Front-end-app's](https://github.com/shella12/RentAnItemApp) repo here.
+You can see the live [Rent a house API](https://github.com/shella12/RentAnItemApp) here.
 
 <!-- GETTING STARTED -->
 
@@ -74,15 +78,17 @@ Clone this repository by using the command line :
 
 - `git clone git@github.com:shella12/RentAnItemBackend.git`
 
+First you need to set up the database. To Create a database run: `rails db:create` and run the migrations `rails db:migrate`.
+
 ### Install
 
-Install this project with:
+Install the bundle packages:
 
 `bundle install`
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project in your local host, execute the following command:
 
 `rails s`
 
@@ -90,9 +96,10 @@ NB: You need to create an `env` file for your database credentials
 your env file should contain the following
 
 ```
-DATABASE_NAME=RentAnItemAPI
-RAILS_DATABASE_USER=
-RAILS_DATABASE_PASSWORD=
+DATABASE_NAME= RentAnItemAPI
+RAILS_DATABASE_USER= YOUR_DATABASE_NAME
+RAILS_DATABASE_PASSWORD= YOUR_DATABASE_PASSWORD
+
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -114,12 +121,6 @@ RAILS_DATABASE_PASSWORD=
 - GitHub: [@shella12](https://github.com/shella12)
 - Twitter: [@Ayesha Arshad](https://twitter.com/AyeshaA03712974)
 - LinkedIn: [Ayesha Arshad](https://www.linkedin.com/in/ayesha-arshad-a690a015a/)
-
-👤 **Ssekweyama Pius**
-
-- GitHub: [@githubhandle](https://github.com/SSEKPIUS)
-- Twitter: [@twitterhandle](https://twitter.com/SSEK_PIUS)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/pius-ssekweyama-23665794)
 
 👤 **Dicko Allasane**
 
