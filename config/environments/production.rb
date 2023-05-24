@@ -1,5 +1,9 @@
 require "active_support/core_ext/integer/time"
 
+Rails.application.routes.default_url_options = {
+  host: 'https://renthousebackend.onrender.com'
+}
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -79,7 +83,7 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # default url for saving picture
-  config.action_controller.default_url_options = { host: 'https://renthousebackend.onrender.com' }
+  # config.action_controller.default_url_options = { host: 'https://renthousebackend.onrender.com' }
 
   # Use a different logger for distributed setups.
   # require "syslog/logger"
