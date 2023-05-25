@@ -145,6 +145,7 @@ To run tests, run the following command:
 - GitHub: [@Trast00](https://github.com/Trast00)
 - Twitter: [@dickoallassane](https://twitter.com/AllassaneDicko0/)
 - LinkedIn: [@dickoallassane](https://www.linkedin.com/in/allassane-dicko-744aaa224)
+- AngelList: [@dickoallassane](https://wellfound.com/u/allassane-dicko)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
