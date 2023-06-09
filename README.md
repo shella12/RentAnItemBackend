@@ -51,6 +51,15 @@ The **Rent a house API** is an API for a house renting app for storing the data 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Preview
+
+<details>
+  <summary>Preview</summary>
+  
+  ![image](https://github.com/shella12/RentAnItemApp/assets/74411135/c9c995c9-560e-4a88-9e93-1913f15b1835)
+  
+</details>
+
 ### Front End app <a name="live-demo"></a>
 
 You can see the [Front-end-app's](https://github.com/shella12/RentAnItemApp) repo here.
